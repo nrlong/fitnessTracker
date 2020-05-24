@@ -12,7 +12,7 @@ const workoutSchema = new Schema (
             {
                 type: {
                     type: String,
-                    trime: true,
+                    trim: true,
                     required: "Enter Excercise Type."
                 },
                 name: {
