@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const routes = require("../fitnessTracker/routes/views")
 const morgan = require('morgan')
+
 
 const PORT = process.env.PORT || 3000;
 
@@ -20,7 +20,6 @@ mongoose.connect(MONGODB_URI, {
     useFindAndModify: false
 })
 
-// app.use("/", routes)
 app.use(require("./routes/api-routes.js"));
 app.use(require("./routes/views.js"));
 
